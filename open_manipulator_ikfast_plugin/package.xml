@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package format="2">
+  <name>open_manipulator_ikfast_plugin</name>
+  <version>0.0.1</version>
+  <description>
+    Kinematics plugin for OpenMANIPULATOR-X, generated through IKFast
+  </description>
+  <author>David Dudas</author>
+  <maintainer email="david@revolutionrobotics.org">David Dudas</maintainer>
+  <license>Apache2</license>
+  <url type="wiki">http://ros.org/wiki/open_manipulator_ikfast_plugin</url>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>tf2_kdl</build_depend>
+  <build_depend>tf2_eigen</build_depend>
+  <depend>eigen_conversions</depend>
+  <depend>liblapack-dev</depend>
+  <depend>moveit_core</depend>
+  <depend>pluginlib</depend>
+  <depend>roscpp</depend>
+  <export>
+    <moveit_core plugin="${prefix}/open_manipulator_moveit_ikfast_plugin_description.xml"/>
+  </export>
+</package>
